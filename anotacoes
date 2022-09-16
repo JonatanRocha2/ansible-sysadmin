@@ -1,8 +1,5 @@
-
 #criar novo par de chaves para autenticacao via chave ssh
 ssh-keygen -b 2048 -t rsa -f ansible-key
-
-ls -lhrt
 
 #copiar chave publica para o host alvo
 ssh-copy-id -i ansible-key.pub root@172.19.0.2
