@@ -7,7 +7,9 @@ docker compose up -d
 ```
 
 - Criar novo par de chaves para autenticacao via chave ssh
+```
 ssh-keygen -b 2048 -t rsa -f ansible-key
+```
 
 - Copiar chave publica para o host alvo
 ```
