@@ -13,10 +13,10 @@ ssh-keygen -b 2048 -t rsa -f ansible-key
 
 - Copiar chave publica para o host alvo
 ```
-ssh-copy-id -i ansible-key.pub [user]@[ip-do-host]
+ssh-copy-id -i [nome-da-chave] [user]@[ip-do-host]
 ```
 ```
-ssh-copy-id -i ansible-key.pub [user]@[ip-do-host]
+ssh-copy-id -i [nome-da-chave] [user]@[ip-do-host]
 ```
 
 - Acessar container usando o arquivo da chave ssh
