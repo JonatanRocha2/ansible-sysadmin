@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  app-vm-01:
+    build: .
+    container_name: 'ubuntu-01'
+    ports:
+      - '22'
+      - '80'
+      - '443'
+      - '3306'
+
+  app-vm-02:
+    build: .
+    container_name: 'ubuntu-02'
+    ports:
+      - '22'
+      - '80'
+      - '443'
+      - '3306'
